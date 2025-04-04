@@ -46,3 +46,6 @@ Las flechas talladas en piedra equivale al enrutamiento estático y las flechas 
 Mientras que el enrutamiento estático es estático y ofrece control, carece de adaptabilidad a diferencia del dinámico que es felxible, escalable y automatizado.
 
 ### 5. El Guardián de la Máscara Única
+La historia del Guardían de la Máscara representa al NAT overload, que permite a múltiples dispositivos usar una sola dirección pública, en este caso la máscara del Guardián.
+
+Cuando un dispositivo quiere comunicarse con el exterior, el router (Guardián) reemplaza su dirección IP privada por una dirección IP pública. De este modo, los mensajes parecen provenir de una única IP. Al mismo tiempo el Guardián mantiene una tabla interna para recordar cual era la IP y el puerto, para así cuando llegue una respuesta saber a que dispositivo se debe reenviar.
